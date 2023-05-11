@@ -1,4 +1,4 @@
-(function(){
+(function () {
     const $ = q => document.querySelector(q);
 
     function convertPeriod(mil) {
@@ -7,14 +7,14 @@
         return `${min}m e ${sec}s`;
     };
 
-    function renderGarage () {
+    function renderGarage() {
         const garage = getGarage();
         $("#garage").innerHTML = "";
         garage.forEach(c => addCarToGarage(c))
     };
 
-    function addCarToGarage (car) {
-        const regex = /^[A-Z]{3}\-\d{4}$/; // Expressão regular para validar a placa do carro
+    function addCarToGarage(car) {
+        const regex = /^[A-Z]{3}[A-Z0-9][A-Z0-9]\d{2}$/; // Expressão regular para validar a placa do carro (padrão antigo e Mercosul)
         if (!regex.test(car.licence)) return; // Se a placa não for válida, não adiciona o carro à garagem
 
         const row = document.createElement("tr");
@@ -23,8 +23,8 @@
             <td>${car.licence}</td>
             <td data-time="${car.time}">
                 ${new Date(car.time)
-                        .toLocaleString('pt-BR', { 
-                            hour: 'numeric', minute: 'numeric' 
+                .toLocaleString('pt-BR', {
+                    hour: 'numeric', minute: 'numeric'
                 })}
             </td>
             <td>
@@ -42,11 +42,11 @@
         const licence = info[1].textContent;
         const msg = `O veículo ${info[0].textContent} de placa ${licence} permaneceu ${period} estacionado. \n\n Deseja encerrar?`;
 
-        if(!confirm(msg)) return;
-        
+        if (!confirm(msg)) return;
+
         const garage = getGarage().filter(c => c.licence !== licence);
         localStorage.garage = JSON.stringify(garage);
-        
+
         renderGarage();
     };
 
@@ -57,7 +57,7 @@
         const name = $("#name").value;
         const licence = $("#licence").value;
 
-        const regex = /^[A-Z]{3}\-\d{4}$/; // Expressão regular para validar a placa do carro
+        const regex = /^[A-Z]{3}[A-Z0-9][A-Z0-9]\d{2}$/; // Expressão regular para validar a placa do carro (padrão antigo e Mercosul)
         if (!regex.test(licence)) {
             alert("A placa informada não é válida.");
             return;
@@ -76,7 +76,8 @@
     });
 
     $("#garage").addEventListener("click", (e) => {
-        if(e.target.className === "delete")
+        if (e.target.className === "delete")
             checkOut(e.target.parentElement.parentElement.cells);
     });
+
 })();

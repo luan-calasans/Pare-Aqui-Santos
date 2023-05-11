@@ -20,7 +20,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     width: 50%;
-    margin: 2rem auto;
+    margin: 0 auto;
 }
 
 div:not() {
@@ -63,7 +63,7 @@ table {
 }
 
 th, td {
-    padding: 5px 25px;
-    text-align: left;
+    padding: 5px;
+    text-align: center;
     border-bottom: 1px solid #ddd;
 }
