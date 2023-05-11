@@ -1,0 +1,432 @@
+@font-face {
+    font-family: "Poppins";
+
+    src: url("../fonts/Poppins-Light.ttf") format("truetype"),
+        url("../fonts/Poppins-Medium.ttf") format("truetype"),
+        url("../fonts/Poppins-Regular.ttf") format("truetype"),
+        url("../fonts/Poppins-SemiBold.ttf") format("truetype"),
+        url("../fonts/Poppins-Bold.ttf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f5f5;
+    color: #0f1b4c;
+}
+
+/* NAVIGATION */
+
+.navigation {
+    margin-top: 1em;
+}
+
+#navigation-identify * {
+    background-color: #0f1b4c;
+}
+
+#navigation {
+    margin: 1.3em;
+    margin-inline: 5em;
+}
+
+.nav-menu {
+    display: flex;
+    text-align: center;
+    flex-basis: 100%;
+    justify-content: center;
+    margin: auto;
+}
+
+#logo-pareaqui {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 1em;
+}
+
+#nav-menu-itens {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+#available-googleplay {
+    width: 14.25em;
+    height: 5.25em;
+    cursor: pointer;
+}
+
+.nav-blue li a {
+    color: #0f1b4c;
+}
+
+#home {
+    font-size: 0.8em;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.a {
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+#nav-menu-itens li:hover {
+    font-weight: bold;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+#identify {
+    margin-left: 1em;
+    justify-content: center;
+}
+
+/* HEADER */
+
+header {
+    margin-block: 3.2em;
+    margin-left: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#download-app {
+    font-size: 0.8em;
+}
+
+.container-header {
+    display: flex;
+    flex-direction: row;
+    margin-right: 3em;
+}
+
+.container-header img {
+    margin-left: 1em;
+    width: 10em;
+}
+
+header button {
+    font-size: 18px;
+    border-radius: 2em;
+    padding: 0.5em;
+    background-color: #0f1b4c;
+}
+
+.container, p {
+    display: grid;
+    text-align: center;
+}
+
+.navigation-parking * {
+    background-color: #f5f5f5;
+}
+
+.container h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#text-about p {
+    font-size: 1.2em;
+    display: block;
+    text-align: justify;
+}
+
+#about img {
+    width: 20em;
+}
+
+.header-text {
+    font-size: 4em;
+    font-weight: 200;
+}
+
+#header-about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#header-about h1 {
+    margin-right: 2em;
+}
+
+#header-about img {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#header-about {}
+
+#header-about p {
+    text-align: justify;
+}
+
+.btn-login a {
+    color: #0f1b4c;
+}
+
+.btn-background-blue {
+    background-color: #0f1b4c;
+    color: #f5f5f5;
+    padding: 1em;
+    font-size: 0.7em;
+    border-radius: 1em;
+    border: none;
+    overflow: hidden;
+}
+
+.btn-background-blue:hover {
+    background-color: #1a2963;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+.registered {
+    color: #486cff;
+}
+
+.dontLogged {
+    font-weight: 800;
+}
+
+footer {
+    padding-block: 1em;
+    text-align: center;
+    color: #ffff;
+    background-color: #8f8f8f;
+    padding-bottom: 3em;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+footer h3 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+#social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+
+#social-links img {
+    width: 2em;
+    height: 2em;
+}
+
+#copyright {
+    margin-top: 1em;
+}
+
+/* CREATE ACCOUNT */
+.create_account {
+    background-color: #0f1b4c;
+    color: #f5f5f5f5;
+}
+
+.container-create-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 82vh;
+    flex-direction: column;
+    gap: 8.5px;
+}
+
+.rectangle-input {
+    background: #3d404b;
+    border-radius: 6px;
+    padding: 3px;
+    font-size: 17px;
+    color: #f5f5f5;
+    flex-direction: column;
+    border-style: none;
+}
+
+label {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.container-create-account {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-create-account p {
+    font-weight: 600;
+    text-align: center;
+}
+
+.container-create-account a {
+    color: #486cff;
+}
+
+.btn-registro {
+    font-weight: 700;
+    font: size 15px;
+    text-align: center;
+    color: #ffffff;
+    margin-block: 16px;
+    border: none;
+    overflow: hidden;
+    position: flex;
+    width: 511px;
+    height: 47.28px;
+    left: 479px;
+    top: 610.84px;
+    background: #486cff;
+    box-shadow: 0px 8px 26px rgba(0, 222, 254, 0.36);
+    border-radius: 6px;
+}
+
+/* LOGIN */
+
+button {
+    cursor: pointer;
+}
+
+.btn-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 1em auto;
+    border: none;
+    width: 25em;
+    height: 3em;
+    background: #486cff;
+    box-shadow: 0px 8px 26px rgba(0, 222, 254, 0.36);
+    border-radius: 6px;
+
+    margin-block: 2em;
+}
+
+.input {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 40vh;
+}
+
+.input button {
+    width: 40vh;
+}
+
+.container-login-page .rectangle-input {
+    display: flex;
+    width: 19.4em;
+    height: 2em;
+}
+
+.container-login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 82vh;
+    flex-direction: column;
+    gap: 8.5px;
+}
+
+.login {
+    text-align: flex-start;
+}
+
+.container-login-page p {
+    text-align: center;
+}
+
+/* MAP */
+
+#map {
+    height: 400px;
+    margin-bottom: 1em;
+}
+
+/* MOBILE  */
+
+@media only screen and (max-width: 428px) {
+    nav {
+        font-size: 0.8em;
+        display: flex;
+    }
+
+    nav a {
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+
+    #logo-pareaqui {
+        width: 45px;
+    }
+
+
+
+    .header-text {
+        font-size: 2em;
+    }
+
+    header p {
+        width: 80%;
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 0.5em;
+    }
+
+    header button {
+
+        font-size: 0.8em;
+        margin-bottom: 5em;
+    }
+
+    #container-create-account form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}

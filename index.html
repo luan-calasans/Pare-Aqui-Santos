@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pare Aqui</title>
+  <link rel="shortcut icon" href="./assets/fav-pareaqui.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <nav id="navigation" style="background-color: #cccdff">
+    <div class="wrapper">
+      <a class="logo" href="#home">
+        <img style="margin-top: 1rem;" src="./assets/imgs/logo.svg" width="50px" alt="logo empresa" srcset="" />
+      </a>
+
+      <div class="menu">
+        <ul>
+          <li><a onclick="closeMenu()" href="#home">Início</a></li>
+          <li><a onclick="closeMenu()" href="#services">Equipe</a></li>
+          <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+        </ul>
+
+        <a class="button" onclick="closeMenu()" href="#contact">ENTRAR EM CONTATO</a>
+
+        <ul class="social-links">
+          <li>
+            <a target="_blank" href="https://www.instagram.com/pareaqui.santos/">
+              <img src="./assets/imgs/instagram.svg" width="30" height="30">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100092443958996">
+              <img src="./assets/imgs/facebook.svg" width="30" height="30">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/company/pare-aqui-santos/">
+              <img src="./assets/imgs/linkedin.svg" width="30" height="30">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20H30" stroke="#001847" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 12H30" stroke="#001847" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M18 28L30 28" stroke="#001847" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h4>SEJA BEM VINDO(A) AO PARE AQUI! 👋</h4>
+          <h1>Encontre sua vaga perfeita</h1>
+        </header>
+
+        <div class="content">
+          <p>
+            Solução pensada para você encontrar sua vaga ideal com base nos seus gastos.
+          </p>
+          <a class="button" href="./parking.html">
+            Acessar Plataforma
+          </a>
+        </div>
+      </div>
+
+      <div class="col-b">
+        <img src="./assets/imgs/mulher-morena-com-celular-na-mao.png" alt="Personagem com fone utilizando notebook" />
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrapper">
+      <header>
+        <h4>Equipe</h4>
+        <h2>Criadores do projeto</h2>
+      </header>
+
+      <div class="content">
+        <div class="cards">
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#001847" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Leonardo Nunes</h3>
+            <p>
+              Programador
+            </p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#001847" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Luan Calasans</h3>
+            <p>
+              Programador
+            </p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#001847" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Mariana Sales</h3>
+            <p>Banco de dados</p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#001847" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Marcela Tavares</h3>
+            <p>Designer</p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+              <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#001847" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Irk Bailoni</h3>
+            <p>Pesquisa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h4>Sobre nós</h4>
+          <h2>Entenda nossa história</h2>
+        </header>
+
+        <div class="content">
+          <p>
+            A Empresa foi fundada com a missão de ajudar as pessoas que dirigem a encontrar vagas rapidamente.
+            Pode parecer um motivo simples, mas atrasos de longo prazo na procura de vagas podem eventualmente
+            fazer com que a pessoa perca compromissos importantes ou renuncie seu tempo de lazer.
+          </p>
+          <p>
+            Segundo
+            a pesquisa realizada, por volta de 80% dos entrevistados desistiram de fazer algo (comer em algum
+            restaurante, por exemplo) por conta da demora para encontrar a vaga nas proximidades de um
+            determinado estabelecimento.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-b">
+        <img src="./assets/imgs/mesa-de-trabalho-com-computadores-e-objetos-sobre-ela.png"
+          alt="Mesa de trabalho com computadores e objetos sobre ela" />
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h2>Entre em contato com a gente!</h2>
+        </header>
+
+        <div class="content">
+          <ul>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                  stroke="#001847" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                  stroke="#001847" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+              R. Souza Tavares, 193
+            </li>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                  stroke="#001847" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M22 6L12 13L2 6" stroke="#001847" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+              pareaquisantos.contato@gmail.com
+            </li>
+          </ul>
+
+          <a class="button" href="https://wa.me/5513988776655" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.6 14.0001C16.4 13.9001 15.1 13.3001 14.9 13.2001C14.7 13.1001 14.5 13.1001 14.3 13.3001C14.1 13.5001 13.7 14.1001 13.5 14.3001C13.4 14.5001 13.2 14.5001 13 14.4001C12.3 14.1001 11.6 13.7001 11 13.2001C10.5 12.7001 10 12.1001 9.6 11.5001C9.5 11.3001 9.6 11.1001 9.7 11.0001C9.8 10.9001 9.9 10.7001 10.1 10.6001C10.2 10.5001 10.3 10.3001 10.3 10.2001C10.4 10.1001 10.4 9.9001 10.3 9.8001C10.2 9.7001 9.7 8.5001 9.5 8.0001C9.4 7.3001 9.2 7.3001 9 7.3001C8.9 7.3001 8.7 7.3001 8.5 7.3001C8.3 7.3001 8 7.5001 7.9 7.6001C7.3 8.2001 7 8.9001 7 9.7001C7.1 10.6001 7.4 11.5001 8 12.3001C9.1 13.9001 10.5 15.2001 12.2 16.0001C12.7 16.2001 13.1 16.4001 13.6 16.5001C14.1 16.7001 14.6 16.7001 15.2 16.6001C15.9 16.5001 16.5 16.0001 16.9 15.4001C17.1 15.0001 17.1 14.6001 17 14.2001C17 14.2001 16.8 14.1001 16.6 14.0001ZM19.1 4.9001C15.2 1.0001 8.9 1.0001 5 4.9001C1.8 8.1001 1.2 13.0001 3.4 16.9001L2 22.0001L7.3 20.6001C8.8 21.4001 10.4 21.8001 12 21.8001C17.5 21.8001 21.9 17.4001 21.9 11.9001C22 9.3001 20.9 6.8001 19.1 4.9001ZM16.4 18.9001C15.1 19.7001 13.6 20.2001 12 20.2001C10.5 20.2001 9.1 19.8001 7.8 19.1001L7.5 18.9001L4.4 19.7001L5.2 16.7001L5 16.4001C2.6 12.4001 3.8 7.4001 7.7 4.9001C11.6 2.4001 16.6 3.7001 19 7.5001C21.4 11.4001 20.3 16.5001 16.4 18.9001Z"
+                fill="white" />
+            </svg>
+
+            ENTRAR EM CONTATO
+          </a>
+        </div>
+      </div>
+
+      <div class="col-b">
+        <img src="./assets/imgs/homem-negro-com-moletom-bege-mexendo-no-celular.png"
+          alt="Homem negro com moletom bege mexendo no celular e sorrindo" />
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <div class="col-a">
+        <a class="logo" href="#home">
+          <img src="./assets/imgs/logo-pareaquibranco.svg" width="100px" alt="logo empresa" srcset="" />
+        </a>
+        <p>
+          ©2023 Pare Aqui. <br />
+          Todos os direitos reservados.
+        </p>
+      </div>
+
+      <div class="col-b">
+        <ul class="social-links">
+          <li>
+            <a target="_blank" href="https://www.instagram.com/pareaqui.santos/">
+              <img src="./assets/imgs/instagram.svg" width="30" height="30">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100092443958996">
+              <img src="./assets/imgs/facebook.svg" width="30" height="30">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/company/pare-aqui-santos/">
+              <img src="./assets/imgs/linkedin.svg" width="30" height="30">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <a id="backToTopButton()" href="#home"> </a>
+
+  <!-- ScrollReaveal Lib -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
