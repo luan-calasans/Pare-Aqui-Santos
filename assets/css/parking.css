@@ -1,12 +1,10 @@
 @font-face {
     font-family: 'Poppins';
-
     src: url('../fonts/Poppins-Light.ttf') format('truetype'),
         url('../fonts/Poppins-Medium.ttf') format('truetype'),
         url('../fonts/Poppins-Regular.ttf') format('truetype'),
         url('../fonts/Poppins-SemiBold.ttf') format('truetype'),
         url('../fonts/Poppins-Bold.ttf') format('truetype');
-
     font-weight: normal;
     font-style: normal;
 }
@@ -19,7 +17,6 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    width: 50%;
     margin: 0 auto;
 }
 
@@ -31,9 +28,9 @@ div:not() {
 }
 
 input, button {
-    width: 98%;
+    width: 100%;
     padding: 0.6rem 0.4rem;
-    margin: 0.4rem;
+    margin-block: 0.2rem;
 }
 
 button {
@@ -54,6 +51,10 @@ button {
     color: rgb(255, 255, 255);
 }
 
+#parking{
+    display: grid;
+    margin-inline: 1rem;
+}
 
 table {
     background-color: #eee;
@@ -67,3 +68,4 @@ th, td {
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
+
