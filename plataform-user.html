@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/imgs/logo-favicon.svg" type="image/x-icon" />
+    <title>Pare Aqui - Plataforma Usuário</title>
+    <link rel="stylesheet" href="./assets/css/parking.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <nav id="navigation" class="navigation-parking">
+        <div class="nav-menu">
+            <div id="img-logo-pareaqui">
+                <a href="./index.html">
+                    <img id="logo-pareaqui" src="assets/imgs/logo.svg" alt="logo pare aqui">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="api-google">
+            <div id="map">
+
+            </div>
+            <script src="./assets/js/map.js"></script>
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3j_Q95fPDgme4oTf9CEqlciFcefMAGH8&callback=initMap">
+                </script>
+        </section>
+        <section id="parking">
+            <input type="text" id="name" placeholder="Marca do veículo" autocomplete="off">
+            <input type="text" id="licence" placeholder="Placa do veículo" autocomplete="off">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Estacionamento</th>
+                        <th>Preço por Hora</th>
+                        <th>Placa do Veículo</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="garage"></tbody>
+            </table>
+        </section>
+    </main>
+    
+</body>
+
+<script src="./assets/js/plataform-user.js"></script>
+
+</html>

@@ -51,9 +51,31 @@ button {
     color: rgb(255, 255, 255);
 }
 
+
 #parking{
     display: grid;
-    margin-inline: 1rem;
+    text-align: center;
+    justify-content: center;
+    margin-inline: 3em;
+}
+
+#name-company{
+    text-align: center; 
+    margin-top: 2em; 
+    margin-bottom: 1em;
+}
+
+#name-company h2{
+    font-size: 0.7em;
+    margin-bottom: 2em;
+}
+
+#parking-admin{
+    margin-inline: 5em;
+}
+
+input, table{
+    width: 100%;
 }
 
 table {
@@ -64,7 +86,29 @@ table {
 }
 
 th, td {
+    font-size: 16px;
     padding: 5px;
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
+
+@media (max-width: 320px)
+{
+  input, button, table{
+    width: 100%;
+  }
+}
+
+ @media (max-width: 375px)
+{
+  input{
+    width: 19em;
+  }
+}
+
+@media (max-width: 425px)
+{
+  input{
+    width: 24em;
+  }
+} 
