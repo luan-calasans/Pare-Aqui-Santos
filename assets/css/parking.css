@@ -56,18 +56,18 @@ button {
     display: grid;
     text-align: center;
     justify-content: center;
-    margin-inline: 3em;
+    margin-inline: 0.8rem;
 }
 
 #name-company{
     text-align: center; 
-    margin-top: 2em; 
-    margin-bottom: 1em;
+    margin-top: 2rem; 
+    margin-bottom: 1rem;
 }
 
 #name-company h2{
-    font-size: 0.7em;
-    margin-bottom: 2em;
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
 }
 
 #parking{
@@ -76,7 +76,7 @@ button {
 }
 
 #parking-admin{
-    margin-inline: 5em;
+    margin-inline: 5rem;
 }
 
 #api-google{
@@ -95,7 +95,7 @@ table {
 }
 
 th, td {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding: 3px;
     text-align: center;
     border-bottom: 1px solid #ddd;
