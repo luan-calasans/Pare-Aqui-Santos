@@ -70,8 +70,17 @@ button {
     margin-bottom: 2em;
 }
 
+#parking{
+    display: flex;
+    flex-direction: column;
+}
+
 #parking-admin{
     margin-inline: 5em;
+}
+
+#api-google{
+    width: 100%;
 }
 
 input, table{
@@ -86,29 +95,8 @@ table {
 }
 
 th, td {
-    font-size: 16px;
-    padding: 5px;
+    font-size: 0.7rem;
+    padding: 3px;
     text-align: center;
     border-bottom: 1px solid #ddd;
 }
-
-@media (max-width: 320px)
-{
-  input, button, table{
-    width: 100%;
-  }
-}
-
- @media (max-width: 375px)
-{
-  input{
-    width: 19em;
-  }
-}
-
-@media (max-width: 425px)
-{
-  input{
-    width: 24em;
-  }
-} 

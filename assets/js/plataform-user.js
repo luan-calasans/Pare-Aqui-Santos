@@ -22,7 +22,7 @@ function initMap() {
   });
   marker1.addListener("click", () => {
     const licensePlate = document.getElementById("licence").value.toUpperCase();
-    displayParkingInfo("Estacionamento 1", "R$ 10,00", licensePlate);
+    displayParkingInfo("Estapar", "10,00", licensePlate);
     infoWindow1.open(map, marker1);
   });
 
@@ -36,7 +36,7 @@ function initMap() {
   });
   marker2.addListener("click", () => {
     const licensePlate = document.getElementById("licence").value.toUpperCase();
-    displayParkingInfo("Estacionamento 2", "R$ 15,00", licensePlate);
+    displayParkingInfo("Concais", "15,00", licensePlate);
     infoWindow2.open(map, marker2);
   });
 
@@ -50,7 +50,7 @@ function initMap() {
   });
   marker3.addListener("click", () => {
     const licensePlate = document.getElementById("licence").value.toUpperCase();
-    displayParkingInfo("Estacionamento 3", "R$ 12,00", licensePlate);
+    displayParkingInfo("Gonzaga", "12,00", licensePlate);
     infoWindow3.open(map, marker3);
   });
 
