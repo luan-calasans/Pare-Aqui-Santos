@@ -21,9 +21,15 @@ function initMap() {
     content: "R. Carvalho de Mendonça, 121 - Encruzilhada, Santos - SP, 11070-100",
   });
   marker1.addListener("click", () => {
-    const licensePlate = document.getElementById("licence").value.toUpperCase();
-    displayParkingInfo("Estapar", "10,00", licensePlate);
-    infoWindow1.open(map, marker1);
+    const licensePlateInput = document.getElementById("licence");
+    const licensePlate = licensePlateInput.value.toUpperCase();
+    
+    if (validateLicensePlate(licensePlate)) {
+      displayParkingInfo("Estapar", "10,00", licensePlate);
+      infoWindow1.open(map, marker1);
+    } else {
+      alert("Placa inválida. Insira uma placa brasileira no formato antigo (ABC-1234) ou no formato do Mercosul (ABC1D23).");
+    }
   });
 
   // Marcador 2: Av. Cândido Gafre - Docas, Santos - SP, 11013-240
@@ -35,9 +41,15 @@ function initMap() {
     content: "Av. Cândido Gafre - Docas, Santos - SP, 11013-240",
   });
   marker2.addListener("click", () => {
-    const licensePlate = document.getElementById("licence").value.toUpperCase();
-    displayParkingInfo("Concais", "15,00", licensePlate);
-    infoWindow2.open(map, marker2);
+    const licensePlateInput = document.getElementById("licence");
+    const licensePlate = licensePlateInput.value.toUpperCase();
+    
+    if (validateLicensePlate(licensePlate)) {
+      displayParkingInfo("Concais", "15,00", licensePlate);
+      infoWindow2.open(map, marker2);
+    } else {
+      alert("Placa inválida. Insira uma placa brasileira no formato antigo (ABC-1234) ou no formato do Mercosul (ABC1D23).");
+    }
   });
 
   // Marcador 3: R. Cláudio Doneux, 54 - Gonzaga, Santos - SP, 11060-460
@@ -49,9 +61,15 @@ function initMap() {
     content: "R. Cláudio Doneux, 54 - Gonzaga, Santos - SP, 11060-460",
   });
   marker3.addListener("click", () => {
-    const licensePlate = document.getElementById("licence").value.toUpperCase();
-    displayParkingInfo("Gonzaga", "12,00", licensePlate);
-    infoWindow3.open(map, marker3);
+    const licensePlateInput = document.getElementById("licence");
+    const licensePlate = licensePlateInput.value.toUpperCase();
+    
+    if (validateLicensePlate(licensePlate)) {
+      displayParkingInfo("Gonzaga", "12,00", licensePlate);
+      infoWindow3.open(map, marker3);
+    } else {
+      alert("Placa inválida. Insira uma placa brasileira no formato antigo (ABC-1234) ou no formato do Mercosul (ABC1D23).");
+    }
   });
 
   map.addListener("dragend", function () {
@@ -70,6 +88,13 @@ function initMap() {
   });
 }
 
+window.addEventListener("DOMContentLoaded", () => {
+  const licensePlateInput = document.getElementById("licence");
+  licensePlateInput.addEventListener("input", () => {
+    licensePlateInput.value = licensePlateInput.value.toUpperCase();
+  });
+});
+
 function displayParkingInfo(name, price, licensePlate) {
   const garageTable = document.getElementById("garage");
   const newRow = garageTable.insertRow();
@@ -82,6 +107,12 @@ function displayParkingInfo(name, price, licensePlate) {
   priceCell.innerHTML = price;
   licensePlateCell.innerHTML = licensePlate;
   reserveButtonCell.innerHTML = `<button class="reserve-button" style="background-color: #3650e7; color: #fff">Reservar</button>`;
+}
+
+function validateLicensePlate(licensePlate) {
+  const regexOld = /^[A-Z]{3}-\d{4}$/;
+  const regexMercosul = /^[A-Z]{3}\d{1}[A-Z]{1}\d{2}$/;
+  return regexOld.test(licensePlate) || regexMercosul.test(licensePlate);
 }
 
 window.initMap = initMap;
